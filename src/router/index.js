@@ -1,11 +1,66 @@
 import { createRouter, createWebHistory } from "vue-router";
 import patientsData from "../views/patientsData.vue";
+import homePage from "../views/homePage.vue";
+import aboutUs from "../views/aboutUs.vue";
+import contactUs from "../views/contactUs.vue";
+import ourServices from "../views/ourServices.vue";
+import registerPage from "../views/registerPage.vue";
+import registerHealth from "../views/registerHealth.vue";
+import registerPortal from "../views/registerPortal.vue";
+import registerStaff from "../views/registerStaff.vue";
+import registerPatient from "../views/registerPatient.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
+      name: "Home Page",
+      component: homePage,
+    },
+    {
+      path: "/about",
+      name: "About Us",
+      component: aboutUs,
+    },
+    {
+      path: "/Services",
+      name: "Our Services",
+      component: ourServices,
+    },
+    {
+      path: "/contact",
+      name: "Contact Us",
+      component: contactUs,
+    },
+    {
+      path: "/register",
+      name: "Register Page",
+      component: registerPage,
+    },
+    {
+      path: "/registerHealth",
+      name: "Register Health",
+      component: registerHealth,
+    },
+    {
+      path: "/registerPortal",
+      name: "Register Portal",
+      component: registerPortal,
+    },
+
+    {
+      path: "/registerStaff",
+      name: "Register Staff",
+      component: registerStaff,
+    },
+    {
+      path: "/registerPatient",
+      name: "Register Patient",
+      component: registerPatient,
+    },
+    {
+      path: "/patientData",
       name: "patient's Data",
       component: patientsData,
     },
@@ -69,7 +124,6 @@ const router = createRouter({
       name: "book appointment",
       component: () => import("../views/bookAppointment.vue"),
     },
-
   ],
 });
 
