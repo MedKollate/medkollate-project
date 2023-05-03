@@ -9,6 +9,9 @@ import registerHealth from "../views/registerHealth.vue";
 import registerPortal from "../views/registerPortal.vue";
 import registerStaff from "../views/registerStaff.vue";
 import registerPatient from "../views/registerPatient.vue";
+import patientDash from "../views/patientDashboard.vue";
+import staffID from "../views/staffID.vue";
+import patientContact from "../views/patientContact.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -55,9 +58,24 @@ const router = createRouter({
       component: registerStaff,
     },
     {
+      path: "/staffID",
+      name: "Staff ID",
+      component: staffID,
+    },
+    {
       path: "/registerPatient",
       name: "Register Patient",
       component: registerPatient,
+    },
+    {
+      path: "/patientContact",
+      name: "Patient Emergency Contact",
+      component: patientContact,
+    },
+    {
+      path: "/patientDash",
+      name: "Patient Dashboard",
+      component: patientDash,
     },
     {
       path: "/patientData",

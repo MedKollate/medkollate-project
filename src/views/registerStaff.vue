@@ -64,26 +64,25 @@ import registerNav from '../components/registerNav.vue';
                     </div>
                 </div>
 
-                <RouterLink to="" class="flex justify-end items-center mt-24">
+                <RouterLink to="/staffID" class="flex justify-end items-center mt-24">
                     <input class="uppercase rounded-md px-10 py-4 submit text-white font-bold" type="button"
                         value="continue">
                 </RouterLink>
 
             </form>
         </div>
-        <RouterLink to="/registerPortal">
-            <img src="../assets/images/SVGs/arrow-left.svg" alt="Arrow Left">
-        </RouterLink>
+
     </main>
 </template>
 
-<style scoped> main {
-     background: #D9D9D9;
- }
+<style scoped>
+main {
+    background: #D9D9D9;
+}
 
- .submit {
-     background-color: #092C4C;
-     font-family: 'Inter';
-     ;
- }
+.submit {
+    background-color: #092C4C;
+    font-family: 'Inter';
+    ;
+}
 </style>
