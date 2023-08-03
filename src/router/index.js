@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import patientsData from "../views/patientsData.vue";
 import homePage from "../views/homePage.vue";
+import signin from "../views/signin.vue";
 import aboutUs from "../views/aboutUs.vue";
 import contactUs from "../views/contactUs.vue";
 import ourServices from "../views/ourServices.vue";
-import registerPage from "../views/registerPage.vue";
+import register from "../views/register.vue";
 import registerHealth from "../views/registerHealth.vue";
 import registerPortal from "../views/registerPortal.vue";
 import registerStaff from "../views/registerStaff.vue";
@@ -20,6 +21,11 @@ const router = createRouter({
       path: "/",
       name: "Home Page",
       component: homePage,
+    },
+    {
+      path: "/signin",
+      name: "Sign-In",
+      component: signin,
     },
     {
       path: "/about",
@@ -39,7 +45,7 @@ const router = createRouter({
     {
       path: "/register",
       name: "Register Page",
-      component: registerPage,
+      component: register,
     },
     {
       path: "/registerHealth",

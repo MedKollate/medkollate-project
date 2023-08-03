@@ -1,5 +1,5 @@
 <script setup>
-import homeNav from '../components/homeNav.vue';
+import HomeNav from '../components/HomeNav.vue';
 
 </script>
 
